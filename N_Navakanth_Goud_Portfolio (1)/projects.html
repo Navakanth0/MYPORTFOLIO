@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | N Navakanth Goud</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Projects</h1>
+<button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+</header>
+<section>
+  <div class="project">
+    <h3>Face Recognition Attendance System</h3>
+    <p>Automates attendance using facial recognition for higher accuracy and efficiency.</p>
+  </div>
+  <div class="project">
+    <h3>Blood Bank Management System</h3>
+    <p>Web-based platform to manage donors, blood stock, and requests with responsive design.</p>
+  </div>
+</section>
+<footer>
+  <p>© 2025 N Navakanth Goud</p>
+</footer>
+
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark');
+    localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+  }
+  window.onload = () => {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+    }
+  };
+</script>
+
+</body>
+</html>
