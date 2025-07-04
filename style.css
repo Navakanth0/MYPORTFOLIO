@@ -1,0 +1,74 @@
+
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #333;
+  --header-bg: #2c3e50;
+  --highlight: #2980b9;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+  --header-bg: #1f1f1f;
+  --highlight: #1e90ff;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  background-color: var(--header-bg);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2, h3 {
+  color: var(--text-color);
+}
+
+.project {
+  background: white;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-left: 4px solid var(--highlight);
+  background-color: var(--bg-color);
+  border-color: var(--highlight);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--header-bg);
+  color: white;
+}
+
+a {
+  color: var(--highlight);
+  text-decoration: none;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: var(--highlight);
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
