@@ -41,16 +41,21 @@
   </style>
 </head>
 <body>
-<nav style="text-align:center; background:#e0e0e0; padding:1rem;">
-  <a href="index.html">Home</a> |
-  <a href="about.html">About</a> |
-  <a href="projects.html">Projects</a> |
-  <a href="contact.html">Contact</a>
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">N Goud</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
 </nav>
 <header>
   <h1>N Navakanth Goud</h1>
   <p>Frontend Developer | Java | React (Learning)</p>
-<button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
 </header>
 
 <section>
@@ -100,8 +105,7 @@ donations, and requests. It tracks blood units, monitors stock levels, and gener
   <p>© 2025 N Navakanth Goud. All Rights Reserved.</p>
 </footer>
 
-
-<script>
+  <script>
   function toggleDarkMode() {
     document.body.classList.toggle('dark');
     localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
